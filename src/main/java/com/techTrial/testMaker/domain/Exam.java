@@ -26,7 +26,18 @@ public class Exam {
     private String name;
 
     @Column
+    private int durationInMinute = 1;
+
+    @Column
     private String description;
+
+    public int getDurationInMinute() {
+        return durationInMinute;
+    }
+
+    public void setDurationInMinute(int durationInMinute) {
+        this.durationInMinute = durationInMinute;
+    }
 
     public String getName() {
         return name;

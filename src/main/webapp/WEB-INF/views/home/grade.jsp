@@ -7,9 +7,8 @@
 </head>
 
 <body>
-<h1>Welcome to Online Test Exam Maker</h1>
-<a href="<c:url value="/spittles" />">Spittles</a> |
-<a href="<c:url value="/spitter/register" />">Register</a>
+<h1>Your Exam score was ${grade}</h1>
+
 </body>
 
 </html>

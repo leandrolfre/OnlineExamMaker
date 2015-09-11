@@ -16,6 +16,9 @@ public class Question implements Comparable<Question> {
     private String description;
 
     @Column
+    private double cost;
+
+    @Column
     private String label;
 
     @OneToMany(cascade=CascadeType.ALL, fetch=FetchType.EAGER)
@@ -39,6 +42,14 @@ public class Question implements Comparable<Question> {
 
     public void setLabel(String label) {
         this.label = label;
+    }
+
+    public double getCost() {
+        return cost;
+    }
+
+    public void setCost(double cost) {
+        this.cost = cost;
     }
 
     public void addChoice(Choice choice) {

@@ -28,7 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
           .defaultSuccessUrl("/exam")
           .and()
           .authorizeRequests()
-          .antMatchers(HttpMethod.POST, "/exam").authenticated()
+          .antMatchers("/exam").authenticated()
           .antMatchers("/grade").authenticated()
           .anyRequest().permitAll();
 

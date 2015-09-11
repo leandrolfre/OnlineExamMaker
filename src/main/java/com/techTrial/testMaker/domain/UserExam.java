@@ -13,13 +13,13 @@ public class UserExam {
     private UserExamID pk = new UserExamID();
 
     @Column(name="grade")
-    private int grade;
+    private double grade;
 
-    public int getGrade() {
+    public double getGrade() {
         return grade;
     }
 
-    public void setGrade(int grade) {
+    public void setGrade(double grade) {
         this.grade = grade;
     }
 
