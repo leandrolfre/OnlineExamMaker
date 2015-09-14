@@ -14,7 +14,7 @@
 
 <body onload='document.f.username.focus();'>
 <h1>Welcome to Online Test Exam Maker</h1>
-<h2><c:out value="${exam.getName()}" /></h2>
+<h2><c:out value="${exam.getName()} - ${exam.getDescription()}" /></h2>
 
 
 <h3>Login with Username and Password</h3>

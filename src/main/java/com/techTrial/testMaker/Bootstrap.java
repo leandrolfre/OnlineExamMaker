@@ -34,6 +34,7 @@ public class Bootstrap implements ApplicationListener<ContextRefreshedEvent> {
 
         exam.setDurationInMinute(1);
         exam.setName("Basic Algebra");
+        exam.setDescription("This is an Algebra Exam.");
         String labels[] = {"a","b","c","d"};
         for(int i=0; i < 4; i++) {
             Question question = new Question();
